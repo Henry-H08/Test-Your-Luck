@@ -11,7 +11,7 @@ print("|===|")
 print(f'|{thing1}{thing2}{thing3}|')
 print("|===|")
 
-start = input("Spin? Y/N")
+start = input("Spin? Y/N ")
 
 if start == "Y":
     thing1 = random.choice(choices)
@@ -21,3 +21,6 @@ if start == "Y":
 print("|===|")
 print(f'|{thing1}{thing2}{thing3}|')
 print("|===|")
+
+if thing1 == thing2 and thing1 == thing3:
+    print("You Win")
