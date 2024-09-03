@@ -22,4 +22,4 @@ while True:
         print("You Win")
         balance = balance + wager
     else:
-        balance - wager
+        balance = balance - wager
