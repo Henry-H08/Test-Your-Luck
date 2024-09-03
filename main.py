@@ -6,21 +6,21 @@ import random
 import time
 
 choices = [1, 2, 3, 4, 5, 6]
+while True:
+    print("|===|")
+    print(f'|{thing1}{thing2}{thing3}|')
+    print("|===|")
+    time.sleep(1)
+    start = input("Spin? Y/N ")
 
-print("|===|")
-print(f'|{thing1}{thing2}{thing3}|')
-print("|===|")
-
-start = input("Spin? Y/N ")
-
-if start == "Y":
-    thing1 = random.choice(choices)
-    thing2 = random.choice(choices)
-    thing3 = random.choice(choices)
-
-print("|===|")
-print(f'|{thing1}{thing2}{thing3}|')
-print("|===|")
-
-if thing1 == thing2 and thing1 == thing3:
-    print("You Win")
+    if start == "Y":
+        thing1 = random.choice(choices)
+        thing2 = random.choice(choices)
+        thing3 = random.choice(choices)
+    time.sleep(1)
+    print("|===|")
+    print(f'|{thing1}{thing2}{thing3}|')
+    print("|===|")
+    time.sleep(1)
+    if thing1 == thing2 and thing1 == thing3:
+        print("You Win")
