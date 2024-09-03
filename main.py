@@ -2,12 +2,15 @@ import random
 import time
 balance = 1000
 
+wager = float(input(f'How much would you like to wager? Current Balance: {balance} '))
 choices = [1, 2, 3, 4, 5, 6]
+
 while True:
-    wager = float(input(f'How much would you like to wager? Current Balance: {balance} '))
-    start = input("Spin? Y/N ")
+   
+    start = input("Spin? Y/N. W to change wager")
     
-    
+    if start == "W":
+         wager = float(input(f'How much would you like to wager? Current Balance: {balance} '))
 
     if start == "Y" and wager <= balance:
         thing1 = random.choice(choices)
