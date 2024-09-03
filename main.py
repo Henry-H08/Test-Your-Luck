@@ -1,16 +1,10 @@
-thing1 = 0
-thing2 = 0
-thing3 = 0
+
 
 import random
 import time
 
 choices = [1, 2, 3, 4, 5, 6]
 while True:
-    print("|===|")
-    print(f'|{thing1}{thing2}{thing3}|')
-    print("|===|")
-    time.sleep(1)
     start = input("Spin? Y/N ")
 
     if start == "Y":
