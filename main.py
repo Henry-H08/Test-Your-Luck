@@ -24,7 +24,8 @@ while True:
     if thing1 == thing2 and thing1 == thing3:
         print("You Win")
         print("Current balance is: " + balance)
-        balance = balance + wager * thing1
+        winamount = wager * thing1
+        balance = balance + winamount
     else:
         balance = balance - wager
  
