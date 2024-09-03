@@ -23,6 +23,8 @@ while True:
     time.sleep(1)
     if thing1 == thing2 and thing1 == thing3:
         print("You Win")
-        balance = balance + wager
+        print("Current balance is: " + balance)
+        balance = balance + wager * thing1
     else:
         balance = balance - wager
+ 
