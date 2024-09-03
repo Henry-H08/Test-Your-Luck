@@ -1,12 +1,10 @@
-
-
 import random
 import time
 balance = 1000
 
 choices = [1, 2, 3, 4, 5, 6]
 while True:
-    wager = float(input(f'How much would you like to wager? Current Balance: {balance}'))
+    wager = float(input(f'How much would you like to wager? Current Balance: {balance} '))
     start = input("Spin? Y/N ")
     
     
@@ -22,3 +20,6 @@ while True:
     time.sleep(1)
     if thing1 == thing2 and thing1 == thing3:
         print("You Win")
+        balance = balance + wager
+    else:
+        balance - wager
