@@ -1,5 +1,6 @@
 import random
 import time
+import os
 balance = 1000
 
 wager = float(input(f'How much would you like to wager? Current Balance: {balance} '))
@@ -10,13 +11,14 @@ while True:
     start = input("Spin? Y/N. W to change wager")
     
     if start == "W":
-         wager = float(input(f'How much would you like to wager? Current Balance: {balance} '))
+         wager = float(input(f'How much would you like to wager? Current Balance: {balance}. '))
 
     if start == "Y" and wager <= balance:
         thing1 = random.choice(choices)
         thing2 = random.choice(choices)
         thing3 = random.choice(choices)
     time.sleep(1)
+    os.system('clear')
     print("|===|")
     print(f'|{thing1}{thing2}{thing3}|')
     print("|===|")
