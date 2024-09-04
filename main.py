@@ -23,6 +23,7 @@ while True:
             print("|===|")
             print(f'|{thing1}{thing2}{thing3}|')
             print("|===|")
+            time.sleep(0.5)
             os.system('clear')
             
 
