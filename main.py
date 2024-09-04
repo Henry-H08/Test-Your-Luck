@@ -5,16 +5,16 @@ balance = 1000
 
 wager = float(input(f'How much would you like to wager? Current Balance: {balance} '))
 choices = [1, 2, 3, 4, 5, 6]
-start = input("Press Enter to Spin and W to Change Wager")
+
+print("Press Enter to Spin and W to Change Wager")
 
 while True:
    
-    
     go = input("")
     if start == "W" or go == "W":
          wager = float(input(f'How much would you like to wager? Current Balance: {balance} '))
 
-    if start == "" and wager <= balance:
+    if go == "" and wager <= balance:
         thing1 = random.choice(choices)
         thing2 = random.choice(choices)
         thing3 = random.choice(choices)
