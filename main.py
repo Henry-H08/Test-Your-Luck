@@ -11,13 +11,21 @@ print("Press Enter to Spin and W to Change Wager")
 while True:
    
     go = input("")
-    if start == "W" or go == "W":
+    if go == "W":
          wager = float(input(f'How much would you like to wager? Current Balance: {balance} '))
 
     if go == "" and wager <= balance:
-        thing1 = random.choice(choices)
-        thing2 = random.choice(choices)
-        thing3 = random.choice(choices)
+        for x in range(6):
+            if x == 6: break
+            thing1 = random.choice(choices)
+            thing2 = random.choice(choices)
+            thing3 = random.choice(choices)
+            print("|===|")
+            print(f'|{thing1}{thing2}{thing3}|')
+            print("|===|")
+            os.system('clear')
+            
+
     time.sleep(1)
     os.system('clear')
     print("|===|")
@@ -31,4 +39,5 @@ while True:
         balance = balance + winamount
     else:
         balance = balance - wager
+ 
  
