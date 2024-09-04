@@ -27,8 +27,6 @@ while True:
             os.system('clear')
             
 
-    time.sleep(1)
-    os.system('clear')
     print("|===|")
     print(f'|{thing1}{thing2}{thing3}|')
     print("|===|")
