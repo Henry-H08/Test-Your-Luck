@@ -7,7 +7,7 @@ wager = float(input(f'How much would you like to wager? Current Balance: {balanc
 choices = [1, 2, 3, 4, 5, 6]
 
 print("Press Enter to Spin and W to Change Wager")
-
+os.system('clear')
 while True:
    
     go = input("")
